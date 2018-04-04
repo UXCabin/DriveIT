@@ -4,19 +4,23 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+
+/* POSITIONING GLOBALS */
+
 .title-left{
 	text-align: left;
 }
 
 .button-right{
 	text-align: right;
-	padding: 21px;
+	padding: 0 20px 20px 0;
 }
 
 .row{
 	width: 1200px;
 	margin: 0 auto;
 }
+
 
 /* NAVIGATION */
 
@@ -43,17 +47,18 @@ body{
 
 
 /* HERO */
+
 .hero {
 	background-image: url('images/hero.png');
 	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.50);
 	height: 444px;
 
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-*
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	*
 }
 .hero-text {
 	text-align: center;
@@ -78,6 +83,7 @@ h2{
 	border: none;
 	outline: none;
 	border-radius: 3px;
+	font-size: 18px;
 }
 
 
@@ -96,7 +102,7 @@ h4{
 
 .service-box{
 	display: inline-block;
-	width: 25%;
+	width: 32%;
 	border-radius: 4px;
 	background-color: #F4F4F4;
 	border: 1px solid #D1D1D1;
@@ -110,13 +116,23 @@ h4{
 }
 
 .about{
-	background: #00C115 url('images/about-image.png') no-repeat 100% 50%;
-	color: #fff;
+	background: #00C115;
+	color: #FFFFFF;
 	overflow: hidden;
+	position: relative;
+}
+.about-background{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: url('images/about-image.png') no-repeat;
+	background-size: cover;
 }
 .about-text-container{
-    width: 50%;
-	padding:  70px 0 150px 0;
+	width: 50%;
+	padding:  60px 0 150px 0;
 }
 .about-text{
 	font-weight: 700;
@@ -130,6 +146,7 @@ h4{
 
 
 /* RESPONSIVE TABLE */
+
 .table{
 	padding: 100px 0 100px 0;
 }
@@ -161,19 +178,20 @@ h4{
 
 
 /* CONTACT FORM */
+
 .contact{
 	background: url('images/contact-image.png') no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 550px;
+	background-size: cover;
+	position: relative;
+	height: 550px;
 }
 .contact-text{
-    color: #fff;
-    padding: 50px 0 0 100px;
-    width: 400px;
+	color: #fff;
+	padding-top: 50px;
+	width: 400px;
 }
 .contact-container{
-	width: 1000px;
+	width: 100%;
 	background-color: #008F10;
 	margin: 50px auto 20px;
 	box-shadow: 0 2px 25px 1px rgba(0,0,0,0.41);
@@ -203,26 +221,32 @@ h6{
 }
 textarea{
 	width: 636px;
-    height: 140px;
-    padding: 10px;
-    margin: 10px 10px 10px 20px;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    outline: none;
+	height: 140px;
+	padding: 10px;
+	margin: 10px 10px 10px 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	outline: none;
 }
 .contact-info{
 	display: inline-block;
 	vertical-align: top;
 	padding: 20px 20px 0px 20px;
-	width: 250px;
+	width: 35%;
 }
 .contact-icon{
-	float: left;
+	position: absolute;
+	transform: translate(0, -50%);
+	top: 50%;
+}
+.contact-row{
+	display: table;
+	position: relative;
 }
 .contact-row p{
 	padding-left: 45px;
 	color: #fff;
 }
 .social-icon{
-	padding:  10px 10px 10px 0;
+	padding: 20px 20px 10px 0;
 }
