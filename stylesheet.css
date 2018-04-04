@@ -146,7 +146,7 @@ h4{
 }
 .about-text-container{
 	width: 500px;
-    padding: 10px 0 150px 50px;
+    padding: 10px 0 150px 0;
 }
 .about-text{
 	font-weight: 400;
