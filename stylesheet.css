@@ -135,18 +135,10 @@ h4{
 	overflow: hidden;
 	position: relative;
 }
-.about-background{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50%;
-	height: 100%;
-	background: url('images/about-image.png') no-repeat;
-	background-size: cover;
-}
-.about-text-container{
-	width: 500px;
-    padding: 10px 0 150px 0;
+.about-text-container, .about-image-container, .about-image{
+	vertical-align: top;
+	width: 598px;
+	display: inline-block;
 }
 .about-text{
 	font-weight: 400;
