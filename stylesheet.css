@@ -1,24 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
 
+p{
+	font-weight: 300;
+}
 
 /* POSITIONING GLOBALS */
 
 .title-left{
 	text-align: left;
+	color: rgba(0,0,0,0.50);
 }
 
 .button-right{
 	text-align: right;
-	padding: 0 20px 20px 0;
+	padding: 0 24px 15px 0;
 }
 
 .row{
 	width: 1200px;
 	margin: 0 auto;
+}
+
+a{
+	color: #FFF;
+	text-decoration:  none;
 }
 
 
@@ -58,27 +71,29 @@ body{
 .hero-text {
 	text-align: center;
 	margin: 0;
-	padding-top: 70px;
+	padding-top: 30px;
 	color: #fff;
 }
-h1{
+.hero-title{
 	font-size:  60px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
 h2{
 	font-size: 44px;
 	text-align: center;
+	color: #333333;
 }
 
 .button-primary{
-	height: 40px;
-	width: 160px;
+	padding: 0 30px 0 30px;
+	height: 45px;
 	text-align: center;
 	color: #fff;
 	background-color: #FF7E41;
 	border: none;
 	outline: none;
 	border-radius: 3px;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 
@@ -91,28 +106,33 @@ h4{
 .services{
 	text-align: center;
 }
-.services .row{
-	padding: 50px 0;
+.services h2{
+	padding:  20px;
 }
-
+.services .row{
+	padding-bottom: 80px;
+}
 .service-box{
 	display: inline-block;
-	width: 32%;
+	width: 384px;
 	border-radius: 4px;
 	background-color: #F4F4F4;
 	border: 1px solid #D1D1D1;
 	padding: 10px 20px 20px 20px;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
 	box-sizing: border-box;
+	margin-right: 20px;
 }
+.service-box:last-child{
+	margin-right: 0px;
+}
+
 .service-description{
 	line-height: 28px;
 }
 
 .about{
 	background: #00C115;
-	color: #FFFFFF;
+	color: #FFF;
 	overflow: hidden;
 	position: relative;
 }
@@ -120,17 +140,17 @@ h4{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 50%;
+	width: 700px;
 	height: 100%;
 	background: url('images/about-image.png') no-repeat;
 	background-size: cover;
 }
 .about-text-container{
-	width: 50%;
-	padding:  60px 0 150px 0;
+	width: 500px;
+    padding: 10px 0 150px 50px;
 }
 .about-text{
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 37px;
 	line-height: 57px;
 }
@@ -143,10 +163,10 @@ h4{
 /* RESPONSIVE TABLE */
 
 .table{
-	padding: 100px 0 100px 0;
+	padding: 120px 0 120px 0;
 }
 .responsive-table{
-	width: 100%;
+	width: 1200px;
 	margin: 0 auto;
 	border-spacing: 0;
 	text-align: left;
@@ -155,13 +175,14 @@ h4{
 	font-size: 20px;
 	background-color: #008F10;
 	color: #fff;
-	font-weight: 700;
 }
 .responsive-table thead th{
 	padding: 10px;
+	font-weight: 400;
 }
 .responsive-table tbody{
 	font-size: 16px;
+	font-weight: 300;
 }
 .responsive-table td{
 	padding: 10px;
@@ -183,10 +204,14 @@ h4{
 .contact-text{
 	color: #fff;
 	padding-top: 50px;
-	width: 400px;
+	width: 590px;
+}
+.contact-text p{
+    font-size: 19px;
+    line-height: 35px;
 }
 .contact-container{
-	width: 100%;
+	width: 1200px;
 	background-color: #008F10;
 	margin: 50px auto 20px;
 	box-shadow: 0 2px 25px 1px rgba(0,0,0,0.41);
@@ -194,40 +219,46 @@ h4{
 .contact-form{
 	display: inline-block;
 	background-color: #fff;
-	width: 700px;
+	width: 874px;
 }
 h6{
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
-	padding: 20px 0 0 20px;
+	padding:  30px 0 10px 30px;
+	margin: 0;
 }
 .contact-title{
-	padding: 0;
+	padding: 0 0 20px 10px;
 	color: #fff;
 }
 .input-basic {
-	width: 290px;
-	height: 20px;
-	padding: 10px;
-	margin: 10px 10px 10px 20px;
+	width: 384px;
+	height: 53px;
+	padding-left: 15px;
+	margin: 10px 17px 10px 30px;
 	border: 1px solid #CCCCCC;
 	border-radius: 4px;
 	outline: none;
+	font-size: 18px;
+	font-weight: 300;
 }
 textarea{
-	width: 636px;
-	height: 140px;
+	width: 820px;
+	height: 163px;
 	padding: 10px;
-	margin: 10px 10px 10px 20px;
+	margin: 10px 10px 10px 30px;
 	border: 1px solid #CCCCCC;
 	border-radius: 4px;
 	outline: none;
+	font-size: 20px;
+	font-weight: 300;
 }
 .contact-info{
 	display: inline-block;
 	vertical-align: top;
 	padding: 20px 20px 0px 20px;
-	width: 35%;
+	width: 300px;
+	box-sizing: border-box;
 }
 .contact-icon{
 	position: absolute;
@@ -237,6 +268,7 @@ textarea{
 .contact-row{
 	display: table;
 	position: relative;
+	margin-top: 10px;
 }
 .contact-row p{
 	padding-left: 45px;
